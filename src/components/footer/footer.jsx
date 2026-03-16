@@ -18,17 +18,16 @@ const Footer = () => {
             <div className="redes">
                 <ul>
                     <li><h2>REDES SOCIALES</h2></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twiter</a></li>
-                    <li><a href="#">Correo</a></li>
+                    <li><a href="#" aria-disabled="true">LinkedIn</a></li>
+                    <li><a href="mailto:mtysko111@gmail.com">Correo</a></li>
                 </ul>
             </div>
             <div className="ubicacion">
                 <ul>
                     <li><h2>UBICACIÓN</h2></li>
-                    <li>Dirección</li>
-                    <li>Partido y provincia</li>
-                    <li>Pais</li>
+                    <li>Pilar del este</li>
+                    <li>Pilar. Buenos Aires</li>
+                    <li>Argentina</li>
                 </ul>
             </div>
         </div>
