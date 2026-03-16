@@ -18,7 +18,15 @@ const Footer = () => {
             <div className="redes">
                 <ul>
                     <li><h2>REDES SOCIALES</h2></li>
-                    <li><a href="#" aria-disabled="true">LinkedIn</a></li>
+                    <li>
+                        <a
+                            href="https://ar.linkedin.com/in/marcelo-eduardo-tysko-97a31a31"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            LinkedIn
+                        </a>
+                    </li>
                     <li><a href="mailto:mtysko111@gmail.com">Correo</a></li>
                 </ul>
             </div>

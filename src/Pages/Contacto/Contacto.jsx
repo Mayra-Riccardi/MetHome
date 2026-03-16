@@ -140,8 +140,13 @@ const Contacto = () => {
 
                 <div className="contact-side__item">
                   <div className="contact-side__label">LinkedIn</div>
-                  <a className="contact-side__value" href="#" aria-disabled="true">
-                    Próximamente
+                  <a
+                    className="contact-side__value"
+                    href="https://ar.linkedin.com/in/marcelo-eduardo-tysko-97a31a31"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Ver perfil
                   </a>
                 </div>
               </div>
