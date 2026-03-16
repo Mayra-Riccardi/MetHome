@@ -1,0 +1,83 @@
+
+.checkout-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .checkout-success {
+    text-align: center;
+    background: #28a745; /* verde éxito */
+    color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  }
+  
+  .checkout-success h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .checkout-success p {
+    font-size: 1.2rem;
+    background: #007bff; /* azul, como el total del carrito */
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem; /* más espacio entre inputs */
+    margin-top: 1.5rem;
+  }
+  
+  .checkout-form label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.3rem;
+  }
+  
+  .checkout-form input {
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08); /* sombra ligera */
+    background: #fff;
+  }
+  
+  .checkout-form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 4px 10px rgba(0,123,255,0.25); /* sombra azul al escribir */
+    background: #fdfdfd;
+  }
+  
+  .checkout-form button {
+    margin-top: 1rem;
+    background: #007bff; /* azul fuerte */
+    border: none;
+    padding: 0.9rem 1.2rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  }
+  
+  .checkout-form button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+  }

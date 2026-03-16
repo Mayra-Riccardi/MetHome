@@ -1,0 +1,38 @@
+.count-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .count-controls button {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .count-controls button:hover {
+    background-color: #45a049;
+  }
+  
+  .count-controls p {
+    margin: 0;
+    font-size: 16px;
+    min-width: 24px;
+    text-align: center;
+  }
+  
+  .count-controls button:last-child {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+  }
+  
+  .count-controls button:last-child:hover {
+    background-color: #45a049;
+  }
+  

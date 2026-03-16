@@ -1,0 +1,32 @@
+.countcart {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .countcart button {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+  }
+  
+  .countcart button:hover {
+    transform: scale(1.1);
+  }
+  
+  .countcart span {
+    min-width: 30px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+  }
+  

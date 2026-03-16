@@ -1,0 +1,88 @@
+.servicios {
+    position: relative;
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-image: url("/img/fondoservice2.jpeg");
+    background-size: cover;
+    z-index: 1;
+  }
+
+.servicios::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* oscurece la imagen */
+  z-index: 0;
+}
+  
+  .tarjeta-servicio {
+    display: flex;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    max-width: 1200px;
+  }
+  
+  .carousel-container {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel img {
+    width: 100%;
+    display: none;
+    object-fit: cover;
+  }
+  
+  .carousel img.active {
+    display: block;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 45%;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 50%;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .info-servicio {
+    padding: 20px;
+    width: 50%;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 0;
+  }
+  
+  .info-servicio h2 {
+    color: crimson;
+    margin-bottom: 10px;
+  }
+  
+  .info-servicio p {
+    line-height: 1.5;
+  }

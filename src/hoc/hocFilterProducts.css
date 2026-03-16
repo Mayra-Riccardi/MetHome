@@ -1,0 +1,24 @@
+.products-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+  
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+  
+.search-bar input {
+    width: 60%;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+  
+.search-bar input:focus {
+    border-color: #333;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}

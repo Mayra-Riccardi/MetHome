@@ -1,0 +1,35 @@
+.general {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+    
+.texto {
+    text-align: center;
+    align-content: center;
+    width: 40%;
+    justify-items: center;
+}
+    
+.titulo {
+    height: 40%;
+}
+    
+.tex2 {
+    width: 70%;
+    height: 50%;
+}
+
+.mail {
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+    width: 100%;
+}
+    
+.fila {
+    display: block;
+    margin: 5px 0px;
+}

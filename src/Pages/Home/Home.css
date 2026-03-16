@@ -1,0 +1,323 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fondo {
+    background-position: center;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.imgfondo{
+    background-image: url("/img/fondotecnico.jpeg");
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 70%;
+    height: 100%;
+    justify-items: center;
+    display: flex;
+}
+
+.overlay {
+    top: 0;
+    left: 0;
+    width:30%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.1));
+    pointer-events: none;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    align-content: center;
+    justify-items: center;
+    
+    h1 {
+        font-weight: bold;
+        font-size: 5rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+p{
+    width: 60%;
+    font-family: 'Nunito Sans', 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+}
+
+.separacion {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: linear-gradient(to right, red, grey);
+    align-content: center;
+    text-align: center;
+}
+
+.ficha {
+    width: 250px;
+    height: 150px;
+    background-color: rgba(177, 54, 54, 0.634);
+    display: inline-block;
+    margin: 20px;
+    justify-items: center;
+
+    h2{
+        font-size: 40px;
+        color: black;
+        margin: 20px;
+    }
+
+    p{
+        font-size: 20px;
+        color: rgb(108, 2, 2);
+        text-align: center;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        margin: 10px;
+    }
+}
+
+.representaciones {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.repre1 {
+    width: 450px;
+    height: 450px;
+    margin: 20px;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    p {
+        font-size: 18px;
+        width: 450px;
+        text-align: initial;
+        font-family:'Nunito Sans', 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+        text-align: justify;
+    }
+
+    button {
+        width: 150px;
+    }
+}
+
+.repre2 {
+    width: 300px;
+    height: 450px;
+    background: linear-gradient(to right, rgb(134, 131, 131), white);
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.servicegral {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70px;
+}
+
+.service {
+    background-color: transparent;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.cardho {
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+    justify-content:space-evenly;
+    position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            box-shadow: 12px 12px 12px rgba(81, 80, 80, 0.728);
+        }
+
+        h1 {
+            font-size: 18px;
+            margin: 10px;
+            font-family: 'Nunito Sans', 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+        }
+}
+
+.imagen {
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.detalle1 {
+    width: 250px;
+    height: 200px;
+    align-content: center;
+    background-color: rgb(200, 193, 193);
+    position: relative;
+    top: -65px;
+    box-shadow: 12px 12px 12px rgba(81, 80, 80, 0.728);
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 70% 100%, 0 100%);
+
+    h1 {
+        color: black;
+    }
+}
+
+.detalle2 {
+    width: 250px;
+    height: 200px;
+    align-content: center;
+    background-color: rgb(211, 65, 65);
+    position: relative;
+    top: -65px;
+    box-shadow: 12px 12px 12px rgba(81, 80, 80, 0.728);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+
+    h1 {
+        color: white;
+    }
+}
+
+button {
+    background-color: #2f2e2eb7;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Segoe UI', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 20px;
+}
+
+.b1:hover {
+    background-color: #c90f0fc3;
+    box-shadow: 0 6px 16px rgba(217, 54, 54, 0.5);
+    transform: translateY(-2px);
+}
+
+.b2:hover {
+    background-color: rgb(200, 193, 193);
+    box-shadow: 0 6px 16px rgba(217, 54, 54, 0.5);
+    transform: translateY(-2px);
+    color: #c90f0fc3;
+}
+
+/* -------------------MEDIA QUERIES------------------------------------*/
+
+@media screen and (max-width: 500px) {
+
+    .fondo {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .imgfondo{
+        background-image: url("/img/fondotecnico.jpeg");
+        width: 100%;
+    }
+    
+    .overlay {
+        width: 100%;
+    }
+
+    p{
+        width: 90%;
+        font-weight: 100;
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+
+    .separacion {
+        width: 100%;
+        height: auto;
+        background: linear-gradient(to right, red, grey);
+        align-content: center;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+        
+    .ficha {
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .representaciones {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .repre1, .repre2 {
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .service {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .cardho {
+        width: 100%;
+        text-align: center;
+        justify-items: center;
+        justify-content:space-evenly;
+        position: relative;
+    }
+}
