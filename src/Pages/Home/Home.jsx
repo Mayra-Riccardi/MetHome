@@ -20,7 +20,9 @@ const Home = () => {
                     La fiabilidad, la eficiencia y las mayores exigencias de funcionalidad han estado
                     configurando nuestra gama de productos durante más de 25 años. Incluso antes de su
                     fundación, el actual equipo LAMTEC introdujo el reglamento O 2 en el mercado en 1982. </p>
-                <button>Conocer más</button>
+                <Link to="/nosotros">
+                    <button>Conocer más</button>
+                </Link>
             </div>
             <div className="repre2">
                 <img src="img/lamtec.jpg" alt="LAMTEC" />
