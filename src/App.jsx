@@ -12,6 +12,7 @@ import Home from './Pages/Home/Home';
 import Service from './Pages/Service/Service';
 import Contacto from './Pages/Contacto/Contacto';
 import Nosotros from './Pages/Nosotros/Nosotros';
+import Admin from './Pages/Admin/Admin';
 
 function App() {
   const location = useLocation();
@@ -21,6 +22,7 @@ function App() {
         <div className="app-container">
           <Navbarfirst />
           {showProductsNav && <NavBar />}
+          <div className="app-content">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path='/Contacto' element={<Contacto />} />
@@ -32,8 +34,10 @@ function App() {
             <Route path='/detail/:productId' element={<ItemDetailContainer />} />
             <Route path='/Cart' element={<Cart/>} />
             <Route path='/Checkout' element={<Checkout />} />
+            <Route path='/admin' element={<Admin />} />
             <Route path='*' element={<div>Error 404</div>} />
           </Routes>
+          </div>
           <Footer />
         </div>
   );

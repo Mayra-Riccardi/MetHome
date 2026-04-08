@@ -14,6 +14,16 @@ const useProducts = (category) => {
             const data = datadb.docs.map((productDb)=> {
                 return {id: productDb.id, ...productDb.data()}
             });
+
+            if (import.meta.env.DEV) {
+                const missingCodes = data.filter((p) => !p.code);
+                if (missingCodes.length) {
+                    console.warn(
+                        `[products] ${missingCodes.length} producto(s) sin 'code' en Firestore. Recomendado: agregar field 'code' (SKU/modelo) en la colección 'products'.`,
+                        missingCodes.slice(0, 5).map((p) => ({ id: p.id, name: p.name }))
+                    );
+                }
+            }
             
             setProducts(data);
             setLoading(false);
@@ -32,6 +42,16 @@ const useProducts = (category) => {
             const data = datadb.docs.map((productDb)=> {
                 return {id: productDb.id, ...productDb.data()}
             });
+
+            if (import.meta.env.DEV) {
+                const missingCodes = data.filter((p) => !p.code);
+                if (missingCodes.length) {
+                    console.warn(
+                        `[products] ${missingCodes.length} producto(s) sin 'code' en Firestore. Recomendado: agregar field 'code' (SKU/modelo) en la colección 'products'.`,
+                        missingCodes.slice(0, 5).map((p) => ({ id: p.id, name: p.name }))
+                    );
+                }
+            }
 
             setProducts(data)
             setLoading(false)

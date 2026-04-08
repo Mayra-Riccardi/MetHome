@@ -25,7 +25,7 @@
   
   .checkout-success p {
     font-size: 1.2rem;
-    background: #007bff; /* azul, como el total del carrito */
+    background: #007bff;
     padding: 0.5rem 1rem;
     border-radius: 8px;
     display: inline-block;
@@ -39,14 +39,37 @@
     gap: 1.2rem; /* más espacio entre inputs */
     margin-top: 1.5rem;
   }
-  
-  .checkout-form label {
+
+  .checkout-subtitle {
+    margin: -0.4rem 0 0 0;
+    color: #444;
+  }
+
+  .checkout-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .checkout-row--2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .checkout-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .checkout-field > span {
     font-weight: 600;
     color: #333;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.1rem;
   }
   
-  .checkout-form input {
+  .checkout-form input,
+  .checkout-form select,
+  .checkout-form textarea {
     padding: 0.8rem 1rem;
     border-radius: 10px;
     border: 1px solid #ccc;
@@ -56,11 +79,23 @@
     box-shadow: 0 2px 6px rgba(0,0,0,0.08); /* sombra ligera */
     background: #fff;
   }
+
+  .checkout-form textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
   
-  .checkout-form input:focus {
+  .checkout-form input:focus,
+  .checkout-form select:focus,
+  .checkout-form textarea:focus {
     border-color: #007bff;
     box-shadow: 0 4px 10px rgba(0,123,255,0.25); /* sombra azul al escribir */
     background: #fdfdfd;
+  }
+
+  .checkout-actions {
+    display: flex;
+    justify-content: flex-start;
   }
   
   .checkout-form button {
@@ -80,4 +115,10 @@
   .checkout-form button:hover {
     background: #0056b3;
     transform: translateY(-2px);
+  }
+
+  @media (max-width: 700px) {
+    .checkout-row--2 {
+      grid-template-columns: 1fr;
+    }
   }

@@ -1,16 +1,31 @@
 .cartwidget {
     position: relative;
-    margin-left: auto;
-  }
-  
-  .cart-badge {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.85);
+    transition: color 0.2s, background 0.2s;
+    padding: 0.4rem;
+    border-radius: 6px;
+}
+
+.cartwidget:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.cart-badge {
     position: absolute;
-    top: -8px;
-    right: -8px;
-    background-color: crimson;
-    color: white;
+    top: -4px;
+    right: -4px;
+    background-color: #fff;
+    color: #cc0000;
     border-radius: 50%;
-    padding: 4px 7px;
-    font-size: 12px;
-    font-weight: bold;
-  }
+    min-width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1;
+}

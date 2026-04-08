@@ -1,0 +1,13 @@
+Options -MultiViews
+RewriteEngine On
+RewriteBase /
+
+# No redirigir archivos o carpetas existentes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# No redirigir mailer.php
+RewriteCond %{REQUEST_URI} !^/mailer\.php
+
+# Todo lo demás va a index.html
+RewriteRule ^ index.html [L]

@@ -1,0 +1,26 @@
+<svg id="logo-svg" viewBox="0 0 240 100" xmlns="http://www.w3.org/2000/svg" class="w-full max-w-md drop-shadow-sm transition-all duration-300">
+                <defs>
+                    <style>
+                        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&amp;display=swap');
+                        .met-text {
+                            font-family: 'Montserrat', sans-serif;
+                            font-size: 34px;
+                            font-weight: 300;
+                            letter-spacing: 0.25em;
+                            /* El color fill="currentColor" permite que el logo se adapte a fondos oscuros si cambiamos el color del texto contenedor, 
+                               pero lo mantendremos fijo según tu diseño para asegurar consistencia */
+                        }
+                    </style>
+                </defs>
+                
+                <g id="logo-elements">
+                    <!-- Fósforo -->
+                    <rect id="fosforo-palo" x="20" y="49" width="50" height="1.5" fill="#222222" rx="0.5"/>
+                    <!-- Cabeza -->
+                    <circle id="fosforo-cabeza" cx="72" cy="49.75" r="3" fill="#222222"/>
+                    <!-- Llama -->
+                    <path d="M72 25 Q 78 37 72 44 Q 66 37 72 25 Z" fill="#E67E22" opacity="0.9"/>
+                    <!-- Texto -->
+                    <text id="texto-met" x="95" y="60" class="met-text" fill="#111111">MET</text>
+                </g>
+            </svg>

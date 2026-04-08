@@ -1,6 +1,63 @@
+import { useState } from "react";
+import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+import db from "../../DB/DB.js";
+import Swal from "sweetalert2";
 import "./Contacto.css";
 
+const INITIAL_FORM = {
+  fullname: "",
+  phone: "",
+  email: "",
+  country: "Argentina",
+  message: "",
+};
+
 const Contacto = () => {
+  const [form, setForm] = useState(INITIAL_FORM);
+  const [sending, setSending] = useState(false);
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSending(true);
+
+    try {
+      const contactRef = collection(db, "contacts");
+      await addDoc(contactRef, {
+        ...form,
+        createdAt: serverTimestamp(),
+      });
+
+      await fetch("/mailer.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ type: "contact", ...form }),
+      });
+
+      Swal.fire({
+        icon: "success",
+        title: "Consulta enviada",
+        text: "Te responderemos a la brevedad.",
+        confirmButtonColor: "#dc143c",
+      });
+
+      setForm(INITIAL_FORM);
+    } catch (error) {
+      console.error("Error al enviar consulta", error);
+      Swal.fire({
+        icon: "error",
+        title: "Error al enviar",
+        text: "No se pudo enviar la consulta. Intentá de nuevo.",
+        confirmButtonColor: "#dc143c",
+      });
+    } finally {
+      setSending(false);
+    }
+  };
+
   return (
     <main className="contact">
       <section className="contact-hero">
@@ -36,12 +93,14 @@ const Contacto = () => {
                 Completá tus datos y contanos en qué podemos ayudarte.
               </p>
 
-              <form className="contact-form">
+              <form className="contact-form" onSubmit={handleSubmit}>
                 <label className="contact-field">
                   <span>Nombre y apellido</span>
                   <input
                     type="text"
                     name="fullname"
+                    value={form.fullname}
+                    onChange={handleChange}
                     placeholder="Nombre y apellido"
                     autoComplete="name"
                     required
@@ -54,6 +113,8 @@ const Contacto = () => {
                     <input
                       type="tel"
                       name="phone"
+                      value={form.phone}
+                      onChange={handleChange}
                       placeholder="+54 9 11 1234-1234"
                       autoComplete="tel"
                       required
@@ -65,6 +126,8 @@ const Contacto = () => {
                     <input
                       type="email"
                       name="email"
+                      value={form.email}
+                      onChange={handleChange}
                       placeholder="correo@ejemplo.com"
                       autoComplete="email"
                       required
@@ -74,7 +137,12 @@ const Contacto = () => {
 
                 <label className="contact-field">
                   <span>País</span>
-                  <select name="country" defaultValue="Argentina" required>
+                  <select
+                    name="country"
+                    value={form.country}
+                    onChange={handleChange}
+                    required
+                  >
                     <option value="Argentina">Argentina</option>
                     <option value="Chile">Chile</option>
                     <option value="Uruguay">Uruguay</option>
@@ -92,6 +160,8 @@ const Contacto = () => {
                   <span>Mensaje</span>
                   <textarea
                     name="message"
+                    value={form.message}
+                    onChange={handleChange}
                     rows={6}
                     placeholder="Comentanos en qué podemos ayudarte"
                     required
@@ -102,10 +172,16 @@ const Contacto = () => {
                   <button
                     className="contact-btn contact-btn--primary"
                     type="submit"
+                    disabled={sending}
                   >
-                    Enviar
+                    {sending ? "Enviando..." : "Enviar"}
                   </button>
-                  <button className="contact-btn contact-btn--ghost" type="reset">
+                  <button
+                    className="contact-btn contact-btn--ghost"
+                    type="reset"
+                    onClick={() => setForm(INITIAL_FORM)}
+                    disabled={sending}
+                  >
                     Limpiar
                   </button>
                 </div>
@@ -159,7 +235,7 @@ const Contacto = () => {
         </div>
       </section>
     </main>
-  )
+  );
 };
 
 export default Contacto;

@@ -1,120 +1,133 @@
-.primeralinea {
-    width: 100%;
-    height: 40px;
-    background: linear-gradient(to left, rgb(255, 0, 0), rgb(2, 0, 0));
+.header {
+    background-color: #6b0000;
+    border-bottom: 3px solid #cc0000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-.segundalinea {
+.header__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+    height: 72px;
     display: flex;
-    flex-direction: row;
-    width: auto;
-    height: auto;
-}
-
-.navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
     align-items: center;
-    width: 100%;
-    height: 60px;
-    background-color: transparent;
-    border-bottom: 2px solid #d35400;
-    font-family: Arial, sans-serif;
-}
-
-.recuadro {
-    height: 60px;
-    width: 200px;
-    min-width: 200px;
-    background-color: red;
-    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
-    display: flex;
-}
-
-.logo {
-    margin-top: -30px;
-    margin-left: 30px;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-}
-
-.navgral {
-    height: 60px;
-    display: flex;
-    width: 50%;
-    align-items: center;
-}
-
-.navlinks {
-    display: flex;
-    width: 100%;
-    list-style: none;
     justify-content: space-between;
-    height: 60px;
+    gap: 2rem;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.header__logo-img {
+    display: block;
+    width: 220px;
+    height: auto;
+    filter: brightness(0) invert(1);
+    animation: logo-enter 0.6s ease both;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.header__logo:hover .header__logo-img {
+    filter: brightness(0) invert(1) drop-shadow(0 0 8px rgba(255, 120, 80, 0.7));
+    transform: scale(1.04);
+}
+
+@keyframes logo-enter {
+    from {
+        opacity: 0;
+        transform: translateX(-12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.header__nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.header__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
     align-items: center;
 }
 
-.navlinks li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 10px 15px;
-    transition: color 0.3s ease;
-}
-
-.navlinks li a:hover {
-    color: #d35400;
-    background-color: rgba(0, 0, 0, 0.665);
-    padding: 10px 15px;
-    border: none;
-    border-radius: 8px;
-}
-
-.navcart {
+.header__links li a {
     position: relative;
-    margin-right: 30px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.88rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.4rem 0.75rem;
+    transition: color 0.2s;
+}
+
+.header__links li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0.75rem;
+    right: 0.75rem;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.25s ease;
+}
+
+.header__links li a:hover {
+    color: #fff;
+}
+
+.header__links li a:hover::after,
+.header__links li a.active::after {
+    transform: scaleX(1);
+}
+
+.header__links li a.active {
+    color: #fff;
+}
+
+.header__cart {
+    flex-shrink: 0;
+    display: flex;
     align-items: center;
 }
 
-@media screen and (max-width: 600px) {
-
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+@media (max-width: 768px) {
+    .header__inner {
+        padding: 0.75rem 1rem;
         height: auto;
-        padding: 10px 0;
+        flex-wrap: wrap;
+        gap: 0.5rem;
     }
 
-    .navgral {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        margin-top: 10px;
+    .header__nav {
+        order: 3;
+        width: 100%;
+        justify-content: flex-start;
     }
 
-    .navlinks {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-        height: auto;
-        padding: 0;
-        margin: 0;
+    .header__links {
+        flex-wrap: wrap;
+        gap: 0;
     }
 
-    .navlinks li a {
-        padding: 8px 12px;
-    }
-
-    .navcart {
-        margin-top: 15px;
-        margin-right: 0;
+    .header__links li a {
+        font-size: 0.78rem;
+        padding: 0.35rem 0.5rem;
     }
 }

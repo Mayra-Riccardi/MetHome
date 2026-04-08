@@ -1,57 +1,79 @@
 .card {
-    background-color: rgb(207, 202, 202);
+    background-color: #fff;
     border-radius: 12px;
-    padding: 2px;
     width: 300px;
     height: 450px;
-    text-align: center;
-    transition: transform 0.2s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.3);
-  }
-  
-  .card-img {
-    width: 90%;
-    height: 45%;
-    margin: auto;
-    margin-top: 15px;
-    border-radius: 16px;
     overflow: hidden;
-    background-color: #fff;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
-  }
-  
-  .item-img {
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-    display: block;
-    object-fit: contain;
-    background-color: transparent;
-  }
-
-  .Description {
-    height: 48%;
-    width: 90%;
-    margin: auto;
-  }
-
-  .Description ul {
-    width: 100%;
-    height: 100%;
-    list-style: none;
+    border: 1px solid #e5e7eb;
     display: flex;
     flex-direction: column;
-    padding-top: 15px;
-    gap: 20px;
-  }
-  
-  .Description ul li {
-    font-size: 18px;
-    text-align: left;
-    padding: 0px 20px auto 10px;
-    font-family: Arial, sans-serif;
-  }
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.card-img {
+    width: 90%;
+    height: 45%;
+    margin: 15px auto 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f9fafb;
+    border: 1px solid #f3f4f6;
+    flex-shrink: 0;
+}
+
+.item-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.card-body {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    flex: 1;
+}
+
+.card-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #111;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.card-desc {
+    font-size: 0.82rem;
+    color: #6b7280;
+    line-height: 1.5;
+    margin: 0;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: auto;
+    color: #cc0000;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    transition: gap 0.2s;
+}
+
+.card-link:hover {
+    gap: 0.65rem;
+}

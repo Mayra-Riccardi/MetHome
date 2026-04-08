@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Home.css";
 import { Link } from 'react-router-dom';
+import CountUp from '../../components/CountUp/CountUp';
 
 const Home = () => {
   return (
@@ -9,8 +10,10 @@ const Home = () => {
             <div className="imgfondo"></div>
             <div className="overlay">
                 <h1>MET</h1>
+                <hr className="hero-divider" />
                 <p>Contamos con la experiencia y trayectoria para brindarte servicios
                 de verificación que te ayudarán a aumentar la confiabilidad de tu equipo.</p>
+                <Link to="/Contacto" className="hero-cta">Contactanos</Link>
             </div>
         </div>
         <div className="representaciones">
@@ -30,20 +33,20 @@ const Home = () => {
         </div>
         <div className="separacion">
             <div className="ficha">
-                <h2>52</h2>
-                <p>Servicios en paises</p>
+                <h2><CountUp target={52} /></h2>
+                <p>Servicios en países</p>
             </div>
             <div className="ficha">
-                <h2>35</h2>
+                <h2><CountUp target={35} /></h2>
                 <p>Años de trayectoria</p>
             </div>
             <div className="ficha">
-                <h2>1682</h2>
+                <h2><CountUp target={1682} /></h2>
                 <p>Trabajos ejecutados</p>
             </div>
             <div className="ficha">
-                <h2>183</h2>
-                <p>Empresas que confian</p>
+                <h2><CountUp target={183} /></h2>
+                <p>Empresas que confían</p>
             </div>
         </div>
 

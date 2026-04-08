@@ -1,38 +1,52 @@
 .count-controls {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  
-  .count-controls button {
-    padding: 8px 12px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 4px;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.count-controls .count-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: #f3f4f6;
+    color: #111;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.2s ease;
-  }
-  
-  .count-controls button:hover {
-    background-color: #45a049;
-  }
-  
-  .count-controls p {
-    margin: 0;
-    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.count-controls .count-btn:hover {
+    background-color: #e5e7eb;
+}
+
+.count-controls .count-value {
+    font-size: 1rem;
+    font-weight: 600;
     min-width: 24px;
     text-align: center;
-  }
-  
-  .count-controls button:last-child {
-    background-color: #4CAF50;
-    color: white;
-    padding: 8px 16px;
-  }
-  
-  .count-controls button:last-child:hover {
-    background-color: #45a049;
-  }
-  
+    margin: 0;
+}
+
+.count-controls .add-btn {
+    padding: 0.65rem 1.5rem;
+    background-color: #cc0000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.count-controls .add-btn:hover {
+    background-color: #a50000;
+    transform: translateY(-2px);
+}
