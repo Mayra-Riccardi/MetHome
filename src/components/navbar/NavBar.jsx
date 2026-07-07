@@ -10,16 +10,22 @@ const NavBar = () => {
                         <Link to="/category">Todos</Link>
                     </li>
                     <li>
-                        <Link to="/category/gas">Gas</Link>
+                        <Link to="/category/controladores">Controladores</Link>
                     </li>
                     <li>
-                        <Link to="/category/aire">Aire</Link>
+                        <Link to="/category/medicion">Medición y optimización de combustión</Link>
                     </li>
                     <li>
-                        <Link to="/category/programadores">Programadores</Link>
+                        <Link to="/category/control">Control integral de calderas</Link>
                     </li>
                     <li>
-                        <Link to="/category/quemadores">Quemadores</Link>
+                        <Link to="/category/sensores">Sensores de llama</Link>
+                    </li>
+                    <li>
+                        <Link to="/category/servosvalvulas">Válvulas y servomotores</Link>
+                    </li>
+                    <li>
+                        <Link to="/category/pilotos">Pilotos</Link>
                     </li>
                 </ul>
             </nav>

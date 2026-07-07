@@ -28,16 +28,16 @@ const Nosotros = () => {
       <section className="about-container">
         <div className="about-stats">
           <div className="about-stat">
-            <div className="about-stat__value">35+</div>
+            <div className="about-stat__value">38</div>
             <div className="about-stat__label">Años de trayectoria</div>
           </div>
           <div className="about-stat">
-            <div className="about-stat__value">180+</div>
+            <div className="about-stat__value">183+</div>
             <div className="about-stat__label">Empresas acompañadas</div>
           </div>
           <div className="about-stat">
             <div className="about-stat__value">52</div>
-            <div className="about-stat__label">Servicios en países</div>
+            <div className="about-stat__label">Paises donde prestamos servicios</div>
           </div>
         </div>
 

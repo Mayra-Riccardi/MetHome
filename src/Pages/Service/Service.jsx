@@ -23,23 +23,20 @@ const Service = () => {
         <Carousel 
           images={[
             "img/quemador1.2.jpeg",
-            "img/quemador1.3.jpeg",
-            "img/Quemador4.jpeg",
+            "img/quemador12.jpeg",
+            "img/quemador13.jpeg",
           ]}
         />
           
         <div className="info-servicio">
-          <h2>Servicio de mantenimiento de quemadores</h2>
+          <h2>Mantenimiento de quemadores</h2>
           <ul>
             <li>Control de funcionamiento del quemador</li>
             <li>Verificación y pruebas del controlador</li>
-            <li>Revisión y ajuste de dumpers</li>
-            <li>Verificación del estado de fotocélulas</li>
+            <li>Revisión y ajuste de dampers</li>
+            <li>Verificación de sensores y amplificadores de llama</li>
             <li>Limpieza y verificación de bujías</li>
-            <li>Limpieza y verificación de filtros de gas</li>
-            <li>Verificación de presostatos de vapor</li>
-            <li>Verificación de presostato de aire</li>
-            <li>Verificación de presostato de gas</li>
+            <li>Verificación de seguridades del quemador, aire, gas y estanqueidades</li>
           </ul>
         </div>
       </section>
@@ -47,9 +44,9 @@ const Service = () => {
       <section className="tarjeta-servicio" id="automatizacion">
         <Carousel 
           images={[
-            "img/quemador1.2.jpeg",
-            "img/quemador1.3.jpeg",
-            "img/Quemador4.jpeg",
+            "img/automatizacion1.jpeg",
+            "img/automatizacion2.jpeg",
+            "img/automatizacion3.jpeg",
           ]}
         />
 
@@ -60,7 +57,6 @@ const Service = () => {
             <li>Reemplazo de quemadores y sistemas</li>
             <li>Automatización e instalaciones de PLC</li>
             <li>Modificaciones de quemadores para uso multiple de combustibles</li>
-            <li>Actualziaciones de tableros</li>
           </ul>
         </div>
       </section>
@@ -68,23 +64,22 @@ const Service = () => {
       <section className="tarjeta-servicio" id="seguridad">
         <Carousel 
           images={[
-            "img/quemador1.2.jpeg",
-            "img/quemador1.3.jpeg",
-            "img/Quemador4.jpeg",
+            "img/seguridad1.jpeg",
+            "img/seguridad2.jpeg",
           ]}
         />
       
         <div className="info-servicio">
           <h2>Protocolos de seguridad</h2>
           <ul>
-            <li>Control de funcionamiento de controles de nivel</li>
-            <li>Revisión de detectores de llama</li>
+            <li>Revisión de funcionamiento de controles de nivel</li>
             <li>verificación de bujias de muy bajo nivel</li>
+            <li>Revisión de detectores de llama</li>
             <li>Verificación y calibración de control de tempratura de gases</li>
             <li>Verificación de funcionamiento de presostatos de vapor</li>
             <li>Verificación de funcionamiento de presostatos de gas</li>
-            <li>Verificación de funcionamiento y inexistencia de fugas en válvulas de gas</li>
-            <li>Regulación de válvulas reguladoras de gas</li>
+            <li>Ajuste de válvulas reguladoras de gas</li>
+            <li>Verificación de inexistencia de fugas de gas</li>
           </ul>
         </div>
       </section>
@@ -101,11 +96,10 @@ const Service = () => {
         <div className="info-servicio">
           <h2>Analisis de la combustión</h2>
           <ul>
-            <li>Medición de gases de combustión</li>
+            <li>Medición de gases de chimenea</li>
             <li>Analisis de la combustión</li>
-            <li>Regulación de combustión de acuerdo a los distintos combustibles</li>
-            <li>Regulación de curvas de combustión</li>
-            <li>Elaboración de informes certificados para auditorisa medio ambientales</li>
+            <li>Ajuste de combustión de acuerdo a los distintos combustibles</li>
+            <li>Elaboración de informes certificados para auditorias medio ambientales</li>
           </ul>
         </div>
       </section>
@@ -113,20 +107,19 @@ const Service = () => {
       <section className="tarjeta-servicio" id="eficiencia">
         <Carousel 
           images={[
-            "img/quemador1.2.jpeg",
-            "img/quemador1.3.jpeg",
-            "img/Quemador4.jpeg",
+            "img/seguridad2.jpeg",
+            "img/eficiencia1.jpeg",
           ]}
         />
 
         <div className="info-servicio">
           <h2>Eficiencia energética</h2>
           <ul>
-            <li>Regulación de las curvas de combustión</li>
+            <li>Regulación de las distintas curvas de combustión</li>
             <li>Estudio para el aprovechamiento de la energía</li>
-            <li>Regulación de temperaturas de ingersos de agua</li>
-            <li>Aprovechamiento de al aire y rendimiento</li>
-            <li>Indicadores de estado de interior de calderas</li>
+            <li>Analisis del agua, dureza, ph, conductividad</li>
+            <li>Aprovechamiento del aire</li>
+            <li>Optimización del rendimiento de la caldera</li>
           </ul>
         </div>
       </section>
@@ -134,14 +127,14 @@ const Service = () => {
       <section className="tarjeta-servicio" id="nuevo">
         <Carousel 
           images={[
-            "img/quemador1.2.jpeg",
-            "img/quemador1.3.jpeg",
-            "img/Quemador4.jpeg",
+            "img/quemador10.jpeg",
+            "img/quemador11.jpeg",
+            "img/quemador13.jpeg",
           ]}
         />
 
         <div className="info-servicio">
-          <h2>Montaje de nuevos equipos</h2>
+          <h2>Nuevos equipos</h2>
           <ul>
             <li>Servicios especiales de ingenieria y desarrollo</li>
             <li>Modificaciones de quemadores para alimentación multiple</li>

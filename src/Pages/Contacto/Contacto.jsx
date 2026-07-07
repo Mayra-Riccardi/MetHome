@@ -72,12 +72,12 @@ const Contacto = () => {
           <div className="contact-hero__mini">
             <div className="contact-mini">
               <div className="contact-mini__label">Ubicación</div>
-              <div className="contact-mini__value">Pilar del este · Buenos Aires</div>
+              <div className="contact-mini__value">Pilar · Buenos Aires</div>
             </div>
             <div className="contact-mini">
               <div className="contact-mini__label">Email</div>
-              <a className="contact-mini__value" href="mailto:mtysko111@gmail.com">
-                mtysko111@gmail.com
+              <a className="contact-mini__value" href="mailto:gonzalotysko@gmail.com">
+                gonzalotysko@gmail.com
               </a>
             </div>
           </div>
@@ -196,6 +196,9 @@ const Contacto = () => {
                   <a className="contact-side__value" href="https://wa.me/5491131716356">
                     +54 9 11 3171-6356
                   </a>
+                  <a className="contact-side__value" href="https://wa.me/5491121872412">
+                    +54 9 11 2187-2412
+                  </a>
                 </div>
 
                 <div className="contact-side__item">
@@ -203,12 +206,14 @@ const Contacto = () => {
                   <a className="contact-side__value" href="mailto:mtysko111@gmail.com">
                     mtysko111@gmail.com
                   </a>
+                  <a className="contact-side__value" href="mailto:gonzalotysko@gmail.com">
+                    gonzalotysko@gmail.com
+                  </a>
                 </div>
 
                 <div className="contact-side__item">
                   <div className="contact-side__label">Ubicación</div>
                   <div className="contact-side__value">
-                    Pilar del este<br />
                     Pilar, Buenos Aires<br />
                     Argentina
                   </div>

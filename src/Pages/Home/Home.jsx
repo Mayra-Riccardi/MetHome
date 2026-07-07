@@ -33,11 +33,11 @@ const Home = () => {
         </div>
         <div className="separacion">
             <div className="ficha">
-                <h2><CountUp target={52} /></h2>
-                <p>Servicios en países</p>
+                <h2><CountUp target={32} /></h2>
+                <p>Paises donde prestamos servicios</p>
             </div>
             <div className="ficha">
-                <h2><CountUp target={35} /></h2>
+                <h2><CountUp target={38} /></h2>
                 <p>Años de trayectoria</p>
             </div>
             <div className="ficha">
