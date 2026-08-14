@@ -34,7 +34,7 @@ const Home = () => {
         <div className="separacion">
             <div className="ficha">
                 <h2><CountUp target={32} /></h2>
-                <p>Paises donde prestamos servicios</p>
+                <p>Paises donde operamos</p>
             </div>
             <div className="ficha">
                 <h2><CountUp target={38} /></h2>
@@ -46,7 +46,7 @@ const Home = () => {
             </div>
             <div className="ficha">
                 <h2><CountUp target={183} /></h2>
-                <p>Empresas que confían</p>
+                <p>Empresas acompañadas</p>
             </div>
         </div>
 
@@ -100,7 +100,7 @@ const Home = () => {
                 </div>
                 <div className="cardho">
                     <div className="imagen">
-                        <img src="img/eficienciaenergetica2.jpg" />
+                        <img src="img/Eficiencia.jpeg" />
                     </div>
                     <div className="detalle1">
                         <h1>Eficiencia energética</h1>
@@ -111,7 +111,7 @@ const Home = () => {
                 </div>
                 <div className="cardho">
                     <div className="imagen">
-                        <img src="img/montajes.jpg" />
+                        <img src="img/Nuevosequipos.jpeg" />
                     </div>
                     <div className="detalle2">
                         <h1>Montaje de nuevos equipos</h1>
