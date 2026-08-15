@@ -1,36 +1,34 @@
 import "./navbar.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
+const categories = [
+    { path: "/category", label: "Todos", end: true },
+    { path: "/category/controladores", label: "Controladores" },
+    { path: "/category/medicion", label: "Medición y optimización de combustión" },
+    { path: "/category/control", label: "Control integral de calderas" },
+    { path: "/category/sensores", label: "Sensores de llama" },
+    { path: "/category/servosvalvulas", label: "Válvulas y servomotores" },
+    { path: "/category/pilotos", label: "Pilotos" },
+];
 
 const NavBar = () => {
-    return(
-        <header>
-            <nav className="navbarproduct">
-                <ul className="navlinksprod">
-                    <li>
-                        <Link to="/category">Todos</Link>
+    return (
+        <nav className="navbarproduct" aria-label="Categorías de productos">
+            <ul className="navlinksprod">
+                {categories.map(({ path, label, end }) => (
+                    <li key={path}>
+                        <NavLink
+                            to={path}
+                            end={end}
+                            className={({ isActive }) => (isActive ? "category-tab active" : "category-tab")}
+                        >
+                            {label}
+                        </NavLink>
                     </li>
-                    <li>
-                        <Link to="/category/controladores">Controladores</Link>
-                    </li>
-                    <li>
-                        <Link to="/category/medicion">Medición y optimización de combustión</Link>
-                    </li>
-                    <li>
-                        <Link to="/category/control">Control integral de calderas</Link>
-                    </li>
-                    <li>
-                        <Link to="/category/sensores">Sensores de llama</Link>
-                    </li>
-                    <li>
-                        <Link to="/category/servosvalvulas">Válvulas y servomotores</Link>
-                    </li>
-                    <li>
-                        <Link to="/category/pilotos">Pilotos</Link>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    )
-}
+                ))}
+            </ul>
+        </nav>
+    );
+};
 
 export default NavBar;
