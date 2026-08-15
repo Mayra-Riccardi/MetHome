@@ -44,7 +44,7 @@ const Cart = () => {
                             )}
                         </div>
                         <div className="cart-item__qty">
-                            <CountCart id={productCart.id} quantity={productCart.quantity} stock={productCart.stock} />
+                            <CountCart id={productCart.id} quantity={productCart.quantity} />
                         </div>
                         <button className="cart-item__remove" onClick={() => eliminarproductoById(productCart.id)} aria-label="Eliminar">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

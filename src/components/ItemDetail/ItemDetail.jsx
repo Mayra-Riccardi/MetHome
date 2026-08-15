@@ -26,7 +26,7 @@ const ItemDetail = ({ product = {} }) => {
         {isAdded ? (
           <Link to="/Cart" className="cartbutton">Ir al presupuesto →</Link>
         ) : (
-          <Count stock={product.stock} addProduct={addProduct} />
+          <Count addProduct={addProduct} />
         )}
       </div>
     </div>

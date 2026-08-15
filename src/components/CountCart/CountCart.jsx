@@ -2,16 +2,14 @@ import { useContext, useState } from "react";
 import { Context } from "../Context/Context";
 import "./CountCart.css";
 
-const CountCart = ({id, quantity, stock}) => {
+const CountCart = ({id, quantity}) => {
     const [count, setCount] = useState(quantity);
     const {actualizarCantidad} = useContext(Context);
 
     const sumar = () => {
-        if (count < stock) {
         const newCount = count + 1;
         setCount(newCount);
         actualizarCantidad(id, newCount);
-        }
     };
 
     const restar = () => {
