@@ -38,13 +38,13 @@ const Footer = () => {
           <img src={metlogo} alt="Logo MET" className="footer__logo-img" />
           <p className="footer__tagline">
             Verificación y mantenimiento industrial.<br />
-            Más de 35 años de trayectoria.
+            Más de 38 años de trayectoria.
           </p>
           <div className="footer__social">
-            <a href="https://wa.me/5491131716356" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+            <a href="https://wa.me/5491138933171" target="_blank" rel="noreferrer" aria-label="WhatsApp">
               <IconWhatsApp />
             </a>
-            <a href="mailto:mtysko111@gmail.com" aria-label="Email">
+            <a href="mailto:contacto@metcombustion.com.ar" aria-label="Email">
               <IconEmail />
             </a>
             <a href="https://ar.linkedin.com/in/marcelo-eduardo-tysko-97a31a31" target="_blank" rel="noreferrer" aria-label="LinkedIn">
@@ -68,13 +68,18 @@ const Footer = () => {
           <h4>Contacto</h4>
           <ul>
             <li>
-              <a href="https://wa.me/5491131716356" target="_blank" rel="noreferrer" className="footer__contact-link">
-                <IconWhatsApp /> +54 9 11 3171-6356
+              <a href="https://wa.me/5491138933171" target="_blank" rel="noreferrer" className="footer__contact-link">
+                <IconWhatsApp /> +54 9 11 3893 3171
               </a>
             </li>
             <li>
-              <a href="mailto:mtysko111@gmail.com" className="footer__contact-link">
-                <IconEmail /> mtysko111@gmail.com
+              <a href="https://wa.me/5491121872412" target="_blank" rel="noreferrer" className="footer__contact-link">
+                <IconWhatsApp /> +54 9 11 2187 2412
+              </a>
+            </li>
+            <li>
+              <a href="mailto:contacto@metcombustion.com.ar" className="footer__contact-link">
+                <IconEmail /> contacto@metcombustion.com
               </a>
             </li>
             <li>
@@ -89,7 +94,7 @@ const Footer = () => {
           <h4>Ubicación</h4>
           <ul>
             <li className="footer__contact-link">
-              <IconPin /> Pilar del Este, Buenos Aires
+              <IconPin /> Pilar, Buenos Aires
             </li>
             <li>Argentina</li>
           </ul>

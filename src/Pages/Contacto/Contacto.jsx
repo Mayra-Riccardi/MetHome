@@ -76,8 +76,8 @@ const Contacto = () => {
             </div>
             <div className="contact-mini">
               <div className="contact-mini__label">Email</div>
-              <a className="contact-mini__value" href="mailto:gonzalotysko@gmail.com">
-                gonzalotysko@gmail.com
+              <a className="contact-mini__value" href="mailto:contacto@metcombustion.com.ar">
+                contacto@metcombustion.com.ar
               </a>
             </div>
           </div>
@@ -193,8 +193,8 @@ const Contacto = () => {
               <div className="contact-side__items">
                 <div className="contact-side__item">
                   <div className="contact-side__label">WhatsApp</div>
-                  <a className="contact-side__value" href="https://wa.me/5491131716356">
-                    +54 9 11 3171-6356
+                  <a className="contact-side__value" href="https://wa.me/5491138933171">
+                    +54 9 11 3893-3171
                   </a>
                   <a className="contact-side__value" href="https://wa.me/5491121872412">
                     +54 9 11 2187-2412
@@ -203,11 +203,8 @@ const Contacto = () => {
 
                 <div className="contact-side__item">
                   <div className="contact-side__label">Email</div>
-                  <a className="contact-side__value" href="mailto:mtysko111@gmail.com">
-                    mtysko111@gmail.com
-                  </a>
-                  <a className="contact-side__value" href="mailto:gonzalotysko@gmail.com">
-                    gonzalotysko@gmail.com
+                  <a className="contact-side__value" href="mailto:contacto@metcombustion.com.ar">
+                    contacto@metcombustion.com.ar
                   </a>
                 </div>
 

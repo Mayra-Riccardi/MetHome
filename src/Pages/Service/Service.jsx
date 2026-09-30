@@ -22,9 +22,9 @@ const Service = () => {
       <section className="tarjeta-servicio" id="quemadores">
         <Carousel 
           images={[
-            "img/quemador1.2.jpeg",
-            "img/quemador12.jpeg",
-            "img/quemador13.jpeg",
+            { src: "img/quemador1.2.jpeg", position: "center 30%" },
+            { src: "img/quemador12.jpeg", position: "center 50%" },
+            { src: "img/quemador13.jpeg", position: "center 15%" },
           ]}
         />
           
@@ -44,9 +44,9 @@ const Service = () => {
       <section className="tarjeta-servicio" id="automatizacion">
         <Carousel 
           images={[
-            "img/automatizacion1.jpeg",
-            "img/automatizacion2.jpeg",
-            "img/automatizacion3.jpeg",
+            { src: "img/automatizacion1.jpeg", position: "center 50%" },
+            { src: "img/automatizacion2.jpeg", position: "center 50%" },
+            { src: "img/automatizacion3.jpeg", position: "center 0%" },
           ]}
         />
 
@@ -64,8 +64,8 @@ const Service = () => {
       <section className="tarjeta-servicio" id="seguridad">
         <Carousel 
           images={[
-            "img/seguridad1.jpeg",
-            "img/seguridad2.jpeg",
+            { src: "img/seguridad1.jpeg", position: "center 50%" },
+            { src: "img/seguridad2.jpeg", position: "center 70%" },
           ]}
         />
       
@@ -87,9 +87,9 @@ const Service = () => {
       <section className="tarjeta-servicio" id="combustion">
         <Carousel 
           images={[
-            "img/quemador1.2.jpeg",
-            "img/quemador1.3.jpeg",
-            "img/Quemador4.jpeg",
+            { src: "img/Eficiencia.jpeg", position: "center 80%" },
+            { src: "img/quemador1.3.jpeg", position: "center 50%" },
+            { src: "img/Quemador4.jpeg", position: "center 50%" },
           ]}
         />
 
@@ -107,8 +107,8 @@ const Service = () => {
       <section className="tarjeta-servicio" id="eficiencia">
         <Carousel 
           images={[
-            "img/seguridad2.jpeg",
-            "img/eficiencia1.jpeg",
+            { src: "img/Quemador124.jpeg", position: "center 70%" },
+            { src: "img/eficiencia1.jpeg", position: "center 50%" },
           ]}
         />
 
@@ -127,9 +127,9 @@ const Service = () => {
       <section className="tarjeta-servicio" id="nuevo">
         <Carousel 
           images={[
-            "img/quemador10.jpeg",
-            "img/quemador11.jpeg",
-            "img/quemador13.jpeg",
+            { src: "img/quemador419.jpeg", position: "center 50%" },
+            { src: "img/quemador11.jpeg", position: "center 35%" },
+            { src: "img/quemador325.jpeg", position: "center 50%" },
           ]}
         />
 

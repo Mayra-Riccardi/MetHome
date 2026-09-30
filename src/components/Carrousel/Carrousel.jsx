@@ -20,9 +20,10 @@ const Carousel = ({ images }) => {
           {images.map((img, i) => (
             <img
               key={i}
-              src={img}
+              src={img.src}
               alt={`Imagen ${i}`}
               className={i === index ? "active" : ""}
+              style={{ objectPosition: img.position }}
             />
           ))}
         </div>
